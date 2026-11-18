@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11131c">
+  <meta name="description" content="{{DESCRIPTION}}">
+  <title>{{TITLE}}</title>
+  <style>{{STYLE}}</style>
+</head>
+<body>
+  <a class="skip-link" href="#games">跳到游戏库</a>
+  <main class="frame">
+    <header class="hero">
+      <div>
+        <h1>{{TITLE}}</h1>
+        <p>{{DESCRIPTION}}</p>
+      </div>
+      <div class="emblem" aria-hidden="true"><span></span></div>
+    </header>
+    <section id="games" class="library" aria-labelledby="games-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="games-title">游戏库</h2>
+          <p id="game-count" role="status">{{COUNT}} 个作品</p>
+        </div>
+        <label class="search" id="search-control" hidden>
+          <span>搜索游戏</span>
+          <input id="game-search" type="search" placeholder="按名称、类型或玩法搜索" autocomplete="off">
+        </label>
+      </div>
+      {{ENTRIES}}
+    </section>
+  </main>
+  <script>{{SCRIPT}}</script>
+</body>
+</html>

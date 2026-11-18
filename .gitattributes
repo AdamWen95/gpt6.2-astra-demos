@@ -1,0 +1,3 @@
+# Preserve the exact bytes of published downloads for checksum verification.
+downloads/*.html binary
+downloads/*.zip binary

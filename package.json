@@ -1,0 +1,17 @@
+{
+  "name": "gpt6.2-astra-demos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A collection of standalone browser games and interactive demos.",
+  "workspaces": ["games/*"],
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "npm run build && npm run preview",
+    "build": "node scripts/build.mjs",
+    "build:single": "node scripts/build.mjs --single",
+    "preview": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "package": "node scripts/build.mjs --package"
+  }
+}
